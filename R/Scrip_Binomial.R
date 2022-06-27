@@ -53,7 +53,7 @@
 
 
 
-# Exemplo aplicação: ------------------------------------------------------
+# Exemplo aplicação 1: ------------------------------------------------------
 
 # Em uma pesquisa faz questionarios perguntando se uma pessoa é ou não a favor
 # do aborto. De acordo com o conhecimento teórico do pesquisador, ele acha que
@@ -188,3 +188,35 @@ binom.test(x = 2100,
 
 # Resultado: o pvalor fica ainda menor do que 0.05. e o intervalo de confianca
 # também diminui bastante com o aumento da amostra.
+
+
+
+# Exemplo aplicação 2: ------------------------------------------------------
+
+# Em um teste foram intrevistadas 80 pessoas. Destas 51 informaram que separam
+# o lixo organico e reciclável e 29 não separam.
+
+
+binom.test(x = 51,
+           n = 80,
+           p = 0.5,
+           alternative = "two.sided",
+           conf.level = 0.95)
+
+# Exact binomial test
+# 
+# data:  51 and 80
+# number of successes = 51, number of trials = 80, p-value = 0.01832
+# alternative hypothesis: true probability of success is not equal to 0.5
+
+# 95 percent confidence interval:
+#   0.5223873 0.7421051
+# sample estimates:
+#   probability of success 
+#   0.6375 
+
+
+
+# Graficos ----------------------------------------------------------------
+
+# Usar gráficos de barra
